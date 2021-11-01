@@ -6,8 +6,7 @@ import java.util.regex.Pattern;
 
 public class Text implements PartText{
    private String value;
-   private List<Paragraph> paragraphs = new ArrayList<>();
-   //private List<Word> words = new ArrayList<>();
+   public List<Paragraph> paragraphs = new ArrayList<>();
 
 
 
@@ -45,7 +44,7 @@ public class Text implements PartText{
    }
 
    @Override
-   public void parsingWordsAndSortByChar(String ch) {
+   public void parsingWordsByCharAndSort(String ch) {
 
       List<Word> words = new ArrayList<>();
       Pattern pattern = Pattern.compile("(\\p{N}|\\p{L}).+?(?=\\n|$|\\s|\\.|\\!|\\,|\\&)");

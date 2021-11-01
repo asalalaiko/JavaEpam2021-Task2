@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Word implements PartText{
     private String value;
-    private List<Symbol> symbols = new ArrayList<>();
+    public List<Symbol> symbols = new ArrayList<>();
 
 
     @Override
@@ -24,7 +24,7 @@ public class Word implements PartText{
     }
 
     @Override
-    public void parsingWordsAndSortByChar(String ch) {
+    public void parsingWordsByCharAndSort(String ch) {
 
     }
 }

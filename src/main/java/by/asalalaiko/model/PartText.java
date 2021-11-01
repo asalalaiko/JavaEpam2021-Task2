@@ -9,6 +9,6 @@ public interface PartText {
 
 
      void parsing ();
-     void parsingWordsAndSortByChar(String ch);
+     void parsingWordsByCharAndSort(String ch);
 
 }

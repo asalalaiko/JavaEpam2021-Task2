@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class Suggestion implements PartText{
     private String value;
-    private List<Word> words = new ArrayList<>();
+    public List<Word> words = new ArrayList<>();
 
 
     @Override
@@ -38,7 +38,7 @@ public class Suggestion implements PartText{
     }
 
     @Override
-    public void parsingWordsAndSortByChar(String ch) {
+    public void parsingWordsByCharAndSort(String ch) {
 
     }
 
