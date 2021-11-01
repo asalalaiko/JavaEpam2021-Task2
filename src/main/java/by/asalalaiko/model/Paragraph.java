@@ -40,4 +40,9 @@ public class Paragraph implements PartText {
         this.suggestions = s;
     }
 
+    @Override
+    public void parsingWordsAndSortByChar(String ch) {
+
+    }
+
 }

@@ -35,8 +35,10 @@ public class Application {
 
         Text text = new Text();
         text.setValue(testString);
+        text.parsingWordsAndSortByChar("р");
 
-        System.out.println();
+
+
 
     }
 }

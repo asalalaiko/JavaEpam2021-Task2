@@ -25,7 +25,7 @@ public class Suggestion implements PartText{
     public void parsing() {
         List<Word> w = new ArrayList<>();
 
-        Pattern pattern = Pattern.compile("(\\n|\\s|\\t|^).+?(?=\\n|$|\\s)");
+        Pattern pattern = Pattern.compile("(\\p{N}|\\p{L}).+?(?=\\n|$|\\s|\\.|\\!|\\,|\\&)");
         Matcher matcher = pattern.matcher(this.value);
         while (matcher.find()){
 
@@ -35,6 +35,11 @@ public class Suggestion implements PartText{
 
         }
         this.words = w;
+    }
+
+    @Override
+    public void parsingWordsAndSortByChar(String ch) {
+
     }
 
 
